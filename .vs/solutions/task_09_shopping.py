@@ -42,7 +42,7 @@ SWEETS = {
 def two_cheapest(shops, product):
     """Два магазина с минимальными ценами на продукт."""
     offers = [
-        {shop, item['price']}
+        {'shop': shop, 'price': item['price']}
         for shop, items in shops.items()
         for item in items
         if item['name'] == product

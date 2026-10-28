@@ -24,7 +24,7 @@ def place_animal_after(zoo, animal, afterWho):
     """Медведь между львом и кенгуру."""
     result = list(zoo)
     place = cell_number(zoo, afterWho)
-    result.insert(place + 1, animal)
+    result.insert(place, animal)
     return result
 
 def final_zoo(zoo=ZOO, birds=BIRDS):
